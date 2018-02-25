@@ -1,0 +1,55 @@
+      Begin Actor Class=UTPickupFactory_Invisibility Name=UTPickupFactory_Invisibility_0 Archetype=UTPickupFactory_Invisibility'UTGameContent.Default__UTPickupFactory_Invisibility'
+         Begin Object Class=DynamicLightEnvironmentComponent Name=PickupLightEnvironment ObjName=DynamicLightEnvironmentComponent_0 Archetype=DynamicLightEnvironmentComponent'UTGameContent.Default__UTPickupFactory_Invisibility:PickupLightEnvironment'
+            Name="DynamicLightEnvironmentComponent_0"
+            ObjectArchetype=DynamicLightEnvironmentComponent'UTGameContent.Default__UTPickupFactory_Invisibility:PickupLightEnvironment'
+         End Object
+         Begin Object Class=StaticMeshComponent Name=StaticMeshComponent1 ObjName=StaticMeshComponent_0 Archetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_Invisibility:StaticMeshComponent1'
+            LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_0'
+            LightingChannels=(bInitialized=True,Static=False,Dynamic=True)
+            Name="StaticMeshComponent_0"
+            ObjectArchetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_Invisibility:StaticMeshComponent1'
+         End Object
+         Begin Object Class=UTParticleSystemComponent Name=InvisParticles ObjName=UTParticleSystemComponent_0 Archetype=UTParticleSystemComponent'UTGameContent.Default__UTPickupFactory_Invisibility:InvisParticles'
+            bJustAttached=True
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="UTParticleSystemComponent_0"
+            ObjectArchetype=UTParticleSystemComponent'UTGameContent.Default__UTPickupFactory_Invisibility:InvisParticles'
+         End Object
+         Begin Object Class=StaticMeshComponent Name=BaseMeshComp ObjName=StaticMeshComponent_1 Archetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_Invisibility:BaseMeshComp'
+            LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_0'
+            LightingChannels=(bInitialized=True,Static=False,Dynamic=True)
+            Translation=(X=-0.000005,Y=-0.000005,Z=-44.000004)
+            Name="StaticMeshComponent_1"
+            ObjectArchetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_Invisibility:BaseMeshComp'
+         End Object
+         Begin Object Class=AudioComponent Name=InvisReady ObjName=AudioComponent_0 Archetype=AudioComponent'UTGameContent.Default__UTPickupFactory_Invisibility:InvisReady'
+            Name="AudioComponent_0"
+            ObjectArchetype=AudioComponent'UTGameContent.Default__UTPickupFactory_Invisibility:InvisReady'
+         End Object
+         Begin Object Class=CylinderComponent Name=CollisionCylinder ObjName=CylinderComponent_0 Archetype=CylinderComponent'UTGameContent.Default__UTPickupFactory_Invisibility:CollisionCylinder'
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="CylinderComponent_0"
+            ObjectArchetype=CylinderComponent'UTGameContent.Default__UTPickupFactory_Invisibility:CollisionCylinder'
+         End Object
+         Begin Object Class=PathRenderingComponent Name=PathRenderer ObjName=PathRenderingComponent_0 Archetype=PathRenderingComponent'UTGameContent.Default__UTPickupFactory_Invisibility:PathRenderer'
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="PathRenderingComponent_0"
+            ObjectArchetype=PathRenderingComponent'UTGameContent.Default__UTPickupFactory_Invisibility:PathRenderer'
+         End Object
+         Spinner=StaticMeshComponent'StaticMeshComponent_0'
+         ParticleEffects=UTParticleSystemComponent'UTParticleSystemComponent_0'
+         PickupReadySound=AudioComponent'AudioComponent_0'
+         LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_0'
+         bPathsChanged=True
+         CylinderComponent=CylinderComponent'CylinderComponent_0'
+         Components(0)=CylinderComponent'CylinderComponent_0'
+         Components(1)=PathRenderingComponent'PathRenderingComponent_0'
+         Components(2)=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_0'
+         Components(3)=StaticMeshComponent'StaticMeshComponent_1'
+         Components(4)=StaticMeshComponent'StaticMeshComponent_0'
+         Components(5)=AudioComponent'AudioComponent_0'
+         Components(6)=UTParticleSystemComponent'UTParticleSystemComponent_0'
+         $coredata
+         CollisionComponent=CylinderComponent'CylinderComponent_0'
+         ObjectArchetype=UTPickupFactory_Invisibility'UTGameContent.Default__UTPickupFactory_Invisibility'
+      End Actor

@@ -1,0 +1,4 @@
+Begin Actor Class=SkaarjTrooper Name=SkaarjTrooper0
+    PawnHealth=450
+    $coredata
+End Actor

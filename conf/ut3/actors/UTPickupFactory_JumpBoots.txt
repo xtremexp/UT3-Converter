@@ -1,0 +1,47 @@
+      Begin Actor Class=UTPickupFactory_JumpBoots Name=UTPickupFactory_JumpBoots_0 Archetype=UTPickupFactory_JumpBoots'UTGameContent.Default__UTPickupFactory_JumpBoots'
+         Begin Object Class=DynamicLightEnvironmentComponent Name=PickupLightEnvironment ObjName=DynamicLightEnvironmentComponent_1 Archetype=DynamicLightEnvironmentComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:PickupLightEnvironment'
+            Name="DynamicLightEnvironmentComponent_1"
+            ObjectArchetype=DynamicLightEnvironmentComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:PickupLightEnvironment'
+         End Object
+         Begin Object Class=StaticMeshComponent Name=StaticMeshComponent1 ObjName=StaticMeshComponent_2 Archetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:StaticMeshComponent1'
+            LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_1'
+            LightingChannels=(bInitialized=True,Static=False,Dynamic=True)
+            Name="StaticMeshComponent_2"
+            ObjectArchetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:StaticMeshComponent1'
+         End Object
+         Begin Object Class=StaticMeshComponent Name=BaseMeshComp ObjName=StaticMeshComponent_3 Archetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:BaseMeshComp'
+            LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_1'
+            LightingChannels=(bInitialized=True,Static=False,Dynamic=True)
+            Translation=(X=-0.000005,Y=-0.000005,Z=-44.000004)
+            Name="StaticMeshComponent_3"
+            ObjectArchetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:BaseMeshComp'
+         End Object
+         Begin Object Class=AudioComponent Name=BootsReady ObjName=AudioComponent_1 Archetype=AudioComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:BootsReady'
+            Name="AudioComponent_1"
+            ObjectArchetype=AudioComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:BootsReady'
+         End Object
+         Begin Object Class=CylinderComponent Name=CollisionCylinder ObjName=CylinderComponent_3 Archetype=CylinderComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:CollisionCylinder'
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="CylinderComponent_3"
+            ObjectArchetype=CylinderComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:CollisionCylinder'
+         End Object
+         Begin Object Class=PathRenderingComponent Name=PathRenderer ObjName=PathRenderingComponent_1 Archetype=PathRenderingComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:PathRenderer'
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="PathRenderingComponent_1"
+            ObjectArchetype=PathRenderingComponent'UTGameContent.Default__UTPickupFactory_JumpBoots:PathRenderer'
+         End Object
+         Spinner=StaticMeshComponent'StaticMeshComponent_2'
+         PickupReadySound=AudioComponent'AudioComponent_1'
+         LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_1'
+         bPathsChanged=True
+         CylinderComponent=CylinderComponent'CylinderComponent_3'
+         Components(0)=CylinderComponent'CylinderComponent_3'
+         Components(1)=PathRenderingComponent'PathRenderingComponent_1'
+         Components(2)=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_1'
+         Components(3)=StaticMeshComponent'StaticMeshComponent_3'
+         Components(4)=StaticMeshComponent'StaticMeshComponent_2'
+         Components(5)=AudioComponent'AudioComponent_1'
+         $coredata
+         CollisionComponent=CylinderComponent'CylinderComponent_3'
+         ObjectArchetype=UTPickupFactory_JumpBoots'UTGameContent.Default__UTPickupFactory_JumpBoots'
+      End Actor

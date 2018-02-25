@@ -1,0 +1,9 @@
+Botpack.UT_FlakCannon;PlaceableWeps.OlFlakCannon
+Botpack.SniperRifle;XWeapons.SniperRifle
+Botpack.UT_Eightball;PlaceableWeps.Eightball
+Botpack.PulseGun;XWeapons.LinkGun
+Botpack.ut_biorifle;PlaceableWeps.GESBioRifle
+Botpack.ShockRifle;PlaceableWeps.ASMD
+Botpack.ripper;PlaceableWeps.Razorjack
+UnrealShare.Eightball;PlaceableWeps.Eightball
+olextras.SPEnf;PlaceableWeps.AutomagRifle

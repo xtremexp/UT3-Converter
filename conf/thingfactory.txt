@@ -1,0 +1,9 @@
+UnrealShare.Rocket;RocketProj'
+Botpack.RocketMk2;RocketProj'
+Botpack.WarShell;WarShell'
+Botpack.UTFlakShell;UTFlakShell'
+Botpack.MortarShell;MortarShell'
+UnrealI.RazorBlade;RazorBlade
+UnrealShare.SkaarjProjectile;SkaarjProjectile
+Botpack.ShockProj;ShockProj'
+#Class'Botpack.PlasmaSphere'

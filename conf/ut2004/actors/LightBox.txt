@@ -1,0 +1,8 @@
+Begin Actor Class=StaticMeshActor Name=StaticMeshActor29
+    StaticMesh=StaticMesh'ONPMeshes.lightbox2'
+    bBlockActors=False
+    bBlockNonZeroExtentTraces=False
+    bBlockKarma=False
+    $coredata
+End Actor
+

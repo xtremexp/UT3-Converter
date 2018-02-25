@@ -1,0 +1,4 @@
+Begin Actor Class=MusicEvent Name=$name
+    Song="$song"
+    $otherdata
+End Actor

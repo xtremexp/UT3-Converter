@@ -1,0 +1,9 @@
+Begin Actor Class=xWeaponBase Name=xWeaponBase0
+    WeaponType=Class'XWeapons.LinkGun'
+    bLightChanged=True
+    Level=LevelInfo'myLevel.LevelInfo0'
+    Region=(Zone=LevelInfo'myLevel.LevelInfo0',iLeaf=77,ZoneNumber=2)
+    Tag="xWeaponBase"
+    PhysicsVolume=DefaultPhysicsVolume'myLevel.DefaultPhysicsVolume13'
+    $coredata
+End Actor

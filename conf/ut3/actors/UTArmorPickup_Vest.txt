@@ -1,0 +1,49 @@
+      Begin Actor Class=UTArmorPickup_Vest Name=UTArmorPickup_Vest_0 Archetype=UTArmorPickup_Vest'UTGame.Default__UTArmorPickup_Vest'
+         Begin Object Class=DynamicLightEnvironmentComponent Name=PickupLightEnvironment ObjName=DynamicLightEnvironmentComponent_6 Archetype=DynamicLightEnvironmentComponent'UTGame.Default__UTArmorPickup_Vest:PickupLightEnvironment'
+            Name="DynamicLightEnvironmentComponent_6"
+            ObjectArchetype=DynamicLightEnvironmentComponent'UTGame.Default__UTArmorPickup_Vest:PickupLightEnvironment'
+         End Object
+         Begin Object Class=UTParticleSystemComponent Name=ArmorParticles ObjName=UTParticleSystemComponent_5 Archetype=UTParticleSystemComponent'UTGame.Default__UTArmorPickup_Vest:ArmorParticles'
+            bJustAttached=True
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="UTParticleSystemComponent_5"
+            ObjectArchetype=UTParticleSystemComponent'UTGame.Default__UTArmorPickup_Vest:ArmorParticles'
+         End Object
+         Begin Object Class=StaticMeshComponent Name=BaseMeshComp ObjName=StaticMeshComponent_12 Archetype=StaticMeshComponent'UTGame.Default__UTArmorPickup_Vest:BaseMeshComp'
+            LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_6'
+            LightingChannels=(bInitialized=True)
+            Translation=(X=-0.000005,Y=-0.000005,Z=-44.000004)
+            Name="StaticMeshComponent_12"
+            ObjectArchetype=StaticMeshComponent'UTGame.Default__UTArmorPickup_Vest:BaseMeshComp'
+         End Object
+         Begin Object Class=StaticMeshComponent Name=ArmorPickUpComp ObjName=StaticMeshComponent_13 Archetype=StaticMeshComponent'UTGame.Default__UTArmorPickup_Vest:ArmorPickUpComp'
+            LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_6'
+            LightingChannels=(bInitialized=True,Static=True)
+            Name="StaticMeshComponent_13"
+            ObjectArchetype=StaticMeshComponent'UTGame.Default__UTArmorPickup_Vest:ArmorPickUpComp'
+         End Object
+         Begin Object Class=CylinderComponent Name=CollisionCylinder ObjName=CylinderComponent_18 Archetype=CylinderComponent'UTGame.Default__UTArmorPickup_Vest:CollisionCylinder'
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="CylinderComponent_18"
+            ObjectArchetype=CylinderComponent'UTGame.Default__UTArmorPickup_Vest:CollisionCylinder'
+         End Object
+         Begin Object Class=PathRenderingComponent Name=PathRenderer ObjName=PathRenderingComponent_6 Archetype=PathRenderingComponent'UTGame.Default__UTArmorPickup_Vest:PathRenderer'
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="PathRenderingComponent_6"
+            ObjectArchetype=PathRenderingComponent'UTGame.Default__UTArmorPickup_Vest:PathRenderer'
+         End Object
+         ParticleEffects=UTParticleSystemComponent'UTParticleSystemComponent_5'
+         LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_6'
+         bPathsChanged=True
+         CylinderComponent=CylinderComponent'CylinderComponent_18'
+         Components(0)=CylinderComponent'CylinderComponent_18'
+         Components(1)=PathRenderingComponent'PathRenderingComponent_6'
+         Components(2)=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_6'
+         Components(3)=StaticMeshComponent'StaticMeshComponent_12'
+         Components(4)=UTParticleSystemComponent'UTParticleSystemComponent_5'
+         Components(5)=StaticMeshComponent'StaticMeshComponent_13'
+         CreationTime=1125.964722
+         $coredata
+         CollisionComponent=CylinderComponent'CylinderComponent_18'
+         ObjectArchetype=UTArmorPickup_Vest'UTGame.Default__UTArmorPickup_Vest'
+      End Actor

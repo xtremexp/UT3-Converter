@@ -1,0 +1,8 @@
+#Music Events Conversion
+#Music Name - Song Section - UT2004 Music filename
+#   Song=Music'DigSh.DigSh' -> DigSh
+#   SongSection=2
+Music'DigSh.DigSh';0;UB-DigSh-S1
+Music'DigSh.DigSh';1;UB-DigSh-S2
+Music'DigSh.DigSh';2;UB-DigSh-S3
+Music'Vortex.Vortex';2;UB-Vortex

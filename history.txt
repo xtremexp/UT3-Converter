@@ -1,0 +1,158 @@
+V0.25a - 23/09/2010
+[UT2004/U2->UT3]-Skips terrain conversion if invalid terrain heightmap data texture
+(so at least will get al other stuff converted)
+ 
+V0.25 - 11/09/2010
+[UT2004/U2->UT3]-Fixed terrain conversion not working when texture package both used in terrain and brushes/staticmeshes
+causing UT3 Unreal Editor converted map import failure
+[UT2004/U2->UT3]-Fixed terrain conversion failure when no heighmap data
+causing UT3 Unreal Editor converted map import failure
+[UT2004/U2->UT3]-Fixed multiple terrain import not working (due to same terrain name)
+causing UT3 Unreal Editor converted map import failure
+[U2->UT3]-Fixed no sound while importing t3d level into UT3 editor
+[U2->UT3]-Removed PhysicsVolume conversion that caused t3d import failure
+[U2->UT3]-Fixed no staticmeshes set to InterpActors (movers)
+[All]-Fixed brushes with no csgOper value set causing import fail.
+[All]-No longer analyze twice some packages for texture replacements.
+[U2->UT3]-Added SunLight conversion
+[UT2004/U2->UT3]- Replaced Directi[UT2004->UT3]-Added newWeaponBase conversion support
+onalLight -> SkyLight for Sunlight
+
+V0.24 Final - 11/07/2010:
+Fixed changing package not working
+
+V0.24 Beta-09/05/2010:
+New features:
+Added support for Unreal 1->UT2004 conversion
+Added support for Unreal 1->UT3 conversion
+Added support (experimental) for Unreal 2->UT3 conversion
+[UT2004->UT3]-Re-enabled save packaged edit mode(+ added some checks)
+[All]-Added some verifications before map conversion
+[All]-Now deletes temporary files created
+[All]-Now exports also sound files from system (.u) files
+[All]-Now can use folders with spaces for converting maps!
+Fixes:
+[All]-Now exporting texture alpha layer with ExtractTextures
+[All]-Now also updates radius values for SoundRadius,LightRadius if ScaleFactor!=1
+[All]-Fixed low volume for AmbientSound actors with Volume value set
+[UT->UT2004]-Fixed bad sound files export
+[U1->UT2004]-Fixed no sound with ambient sound actors
+[U1/UT/UT2004->UT2004/UT3]-Fixed bad scaling for replacement textures
+[UT2004/U2->UT3]-Terrain-Fixed default drawscale3d to 64x64x64 instead of 256x256x256
+[UT2004/U2->UT3]-Terrain-Now converts terrain properly if alpha heighmap or alphalayer textures are in an external package (not in "mylevel")
+[UT2004/U2->UT3]-Fixed some cases with no replacement textures found for special textures (shaders,texpan,..)
+[UT->UT2004]-Fixed bad data format of origin String in Polygon info when texu and texv with very low values.
+[UT/UT2004->UT2004/UT3]-Fixed conversion failure with "pan" expression in texturename while updating UV+Pan values
+
+V0.23-10/03/2010:
+New features:
+Added support for UT->UT3 conversion
+[UT2004->UT3]-Added ONSMobileAssaultStation conversion actor (leviathan)
+[UT2004->UT3]-Added PostProcessVolume actors for UTWaterVolume,UTLavaVolume ("blury" effect)
+[UT2004->UT3]-Now converts Emitter actors (just using some default one set,as UT3 uses ParticleSystem)
+[UT2004->UT3]-Increased Z location value of HeightFog actors (from ZoneInfo actors)
+[UT2004->UT3]-Actor info - Now keeps "Group" field value.
+[UT2004->UT3]-Now using FoliageMeshes (though TerrainMaterial). May revert to old decolayer system for next version as
+TerrainMaterial requires to set a material/texture. However it's better for rendering (using for maxdraxradius rendering field).
+
+Fixes:
+[UT/UT2004->UT3]-Splitted sound radius factor for UT (20x) and UT2k4 (4x) (AmbientSound actors)
+[UT2004->UT3]-Fixed scaling of textures. (based on texture width and height)
+[UT2004->UT3]-Fixed UT3 editor crash while parsing terrain actor t3d data with no decolayer data (UT3 T3D level file import)
+[UT2004->UT3]-Fixed UT3 editor crash while parsing WaterVolume,LavaVolume data (UT3 T3D level file import)
+[UT2004->UT3]-Fixed UT3 editor crash while parsing BlockingVolume data (UT3 T3D level file import)
+[UT2004->UT3]-Sound -Fixed bad conversion of sound files with "wav" word in filename
+[UT2004->UT3]-Fixed bad texture name for staticmeshes with "skins" value set
+[UT2004->UT3]-Fixed some warnings (unknown properties) errors while importing t3d level into UT3 editor
+[UT2004->UT3]-Fixed bad texturing of terrain when multiple layers set
+[UT2004->UT3]-Fixed some missing values with terrain data (heightmap+alphamap)
+[UT2004->UT3]-Fixed no decolayers/foliage appearing on terrain (now using tga files instead of bmp)
+[UT2004->UT3]-Fixed inverted texturing when staticmeshes have at least 2 skin textures set
+[UT2004->UT3]-Fixed error while detecting Sounds usage with "SpawningSound" and "CollisionSound" property in Emitter actor
+[UT2004->UT3]-Fixed minradius value for AmbientSound actors
+[All]-Improved detection of install folders for UT games
+
+V0.22a:
+[UT2004->UT3]-Fixed error while parsing location info of pickups with only 2 axis values
+[UT2004->UT3]-Fixed error while parsing light color from HeightFog actor with only 2 values set (B/G,G/R,B/R-Blue,Red,Green)
+[UT2004->UT3]-Fixed failure of texture names replacement with exotic char such as "{,}"
+[UT2004->UT3]-Fixed error while converting Lights to PointLight without all axis location info
+
+V0.21:
+Added partial install game detection
+[U1/UT->UT2004]-Improved .uc deco file generation for converting .u files to UT2004
+[U1/UT->UT2004]-Improved AmbientSound Volume+Radius
+[U1/UT->UT2004]-Fixed obsolete light effect LE_WateryShimmer,LE_TorchWaver,LE_FireWaver,LE_CloudCast on import
+
+V0.2:
+[All]-Now auto-detects ut games install paths (reads registry values)
+[UT2004->UT3]-Now converts DecoLayers for Terrain
+[UT2004->UT3]-Fixed parsing TerrainLayer data error in terrain info class with no Texture set causing conversion failure.
+[UT2004->UT3]-Added support for skins textures with staticmeshes
+[UT2004->UT3]-Added support for CullDistance for staticmeshes
+[UT2004->UT3]-Fixed bad picture link.
+[UT2004->UT3]-Fixed conversion failure when no texture set for staticmeshes.
+
+V01g:
+[UT2004->UT3]-Improved lightning of HeightFog actor (UT2004: ZoneInfo)
+[UT2004->UT3]-Fixed bad pointlight radius value-UT3 T3D File
+[UT2004->UT3]-Fixed bad AlphaCount values in Terrain/TerrainLayer properties resulting in UT3 editor crashing while importing T3D file
+[UT2004->UT3]-Added support for replacement of these textures types: FinalBlend,FadeColor,ProjectorMaterial,ParticleMat erial,VertexColor,ConstantColor
+[UT2004->UT3]-Added partial support for combiner materials (e.g.: ONS-IslandHop). Replacement textures may not be correct. (50%)
+[UT2004->UT3]-Added UVScale Terrain detection.
+[UT2004->UT3]-Added support for multiple terrain in map (e.g.: ONS-ArticSronghold)
+[UT2004->UT3]-Fixed AmbientSound/TransientSoundVolume-TransientSoundRadius read property causing UT3 T3D File generation failure.
+[UT2004->UT3]-Replaces all material textures (Shader,TexRotator,...that can't be converted) to source textures for staticmeshes-There are much less staticmeshes with no textures set now.
+
+V01f:
+[X->UT2004]-Improved sounds import detection (T3D Level import)
+[DeusEx]-Added DeusEx to UT2004 conversion support (based on UT99 to UT2004 conversion)
+[U1/UT/UT2004]-Fixed some bad T3D level file import causing UED to crash when Model value in brush property doesn't have "myLevel" package set.
+[UT99->UT2004]: Added actor class conversion support for all pickups (weapons,ammo,health,..) and some specific actors such as FortStandard (AssaultObjective).
+[All]-Map Scaler: fixed movers and staticmeshes not being scaled up or down.
+[UT99/UT2004]-Now nearly 100% of textures from .uxx packages are exported correctly (no longer using "ucc.exe batchexport..")
+[UT/UT2004]-Added decorations converter (experimental use/partial port) from Unreal file (UT99) to another (e.g.: UT2004)
+[All]-Added T3D Level File Actor filter.
+[All]-Now shows output log window
+[UT2004]-Updated compatibility with .ase files created,now keeps multi-materials info for imported staticmeshes.
+
+V01e:
+[All]-Added filter to remove bad chars with input map filenames that was causing UT3 editor to crash while importing t3d file.
+[UT2004]-Fixed some textures (8 bits textures) not being able to be correctly imported into UT3 editor
+[UT99-U1]-Added brush to staticmesh internal converter - Texture alignment no supported yet - Will be used to port movers.
+[UT99-U1]-Now can scale up or down whole map to fit with UT2004/UT99=1.25 scale value ratio.
+[UT99-U1]-Texture UV converted when using internal brush converter (UT/U1) -100% of textures now correctly aligned.
+[UT99-U1]-Made internal brush converter (no longer need to do "Select All Brushes->Transform Permanently" within UT Editor).
+[UT2004]-Made optional auto-create LensFlareSource actor if light has corona set.
+[UT2004]-Fixed many "cast" errors when importing UT3 T3D Level file into Editor.
+Unreal 2 To UT3 Conversion preparation: T3D Level Export,SM Export + Conversion,Texture Usage Identification
+[UT2004]-Fixed: restored back UTJumpPad,WaterVolume conversion
+[UT2004]-Added classes conversion support: MinigunAmmoPickup,SniperAmmoPickup,PhysicsVolume,E mitter (only place emitter actor with good location)
+[UT2004]-ZoneInfo with fog set converted to HeightFog
+V01d:
+Added classes support: UDamageCharger,NewHealthCharger,ShieldCharger,xBlu eFlagBase,xRedFlagBase
+Improved Z location of VehicleFactories,WeaponPickups,HealthPickups,Armor Pickups
+Changed Terrain HeightMap scaleZ factor from 0.6 to 0.5 (better values)
+Now uses original Volume+Pitch values for AmbientSoundSimple actors
+Now playerstart actors converted to UTTeamPlayerStart or WarfareTeamPlayerStart depending of input map file.(team-based or not)
+Sunlight converted to DirectionalLight + WAR-Torlan-like LensFlareSource sunlight.
+Fixed some AmbientSoundSimple actors with null wav value
+Changed AmbientSound to AmbientSoundSimple (better radius sound support)
+Deleted old sounds files
+Added LensFlareSource actor near lights if bcorona set to true
+Changed sound conversion to 16bit
+Restored back ONSRV,AmmoPickups conversion
+Fixed terrain rotation value
+Now convert textures from "map.ut2" file to /UT3Textures folder
+Added fast mode for blockingvolumes conversion
+V01c:
+Added: Extracted .wav files converted to 44.1K sample rate.
+Fixed conversion crash when TerrainScale with only 2 values
+Fixed: Actor base not working (Base= )
+Added classes: FlyingPathNode,RoadPathNode,ONSRVFactory,ONSPRVFac tory,ONSHoverCraftFactory,ONSAttackCraftFactory,ON STankFactory,ONSPowerCoreBlue,ONSPowerCoreRed,ONSP owerNodeNeutral
+V01b:
+Fixed terrain scale when TerrainScale values set
+Fixed texlayers
+Fixed terrain visibility (half of it with incorrect values)
+Added Sound Export
+Fixed some staticmeshes with (0,0,0) Location

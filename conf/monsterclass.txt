@@ -1,0 +1,9 @@
+Class'UnrealShare.SkaarjScout';Class'U1Pawns.SkaarjScout'
+Class'UnrealI.SkaarjLord';Class'U1Pawns.SkaarjLord'
+Class'UnrealI.SkaarjAssassin';Class'U1Pawns.SkaarjAssassin'
+Class'UnrealI.Pupae';Pupae
+Class'UnrealI.SkaarjGunner';Class'U1Pawns.SkaarjGunner'
+Class'olextras.NaliTrooper';NaliTrooper
+Class'UnrealI.StoneTitan';StoneTitan
+Class'UnrealI.SkaarjOfficer';SkaarjOfficer
+Class'olextras.followingMercenary';followingMercenary'

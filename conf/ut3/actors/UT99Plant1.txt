@@ -1,0 +1,13 @@
+      Begin Actor Class=StaticMeshActor Name=StaticMeshActor_1 Archetype=StaticMeshActor'Engine.Default__StaticMeshActor'
+         Begin Object Class=StaticMeshComponent Name=StaticMeshComponent0 ObjName=StaticMeshComponent_933 Archetype=StaticMeshComponent'Engine.Default__StaticMeshActor:StaticMeshComponent0'
+            StaticMesh=StaticMesh'UN_Foliage.SM.Mesh.S_UN_Foliage_Mesh_PlantMix_GJJ_02'
+            LightingChannels=(bInitialized=True,Static=True)
+            Name="StaticMeshComponent_933"
+            ObjectArchetype=StaticMeshComponent'Engine.Default__StaticMeshActor:StaticMeshComponent0'
+         End Object
+         StaticMeshComponent=StaticMeshComponent'StaticMeshComponent_933'
+         Components(0)=StaticMeshComponent'StaticMeshComponent_933'
+         CollisionComponent=StaticMeshComponent'StaticMeshComponent_933'
+	 $coredata
+         ObjectArchetype=StaticMeshActor'Engine.Default__StaticMeshActor'
+      End Actor

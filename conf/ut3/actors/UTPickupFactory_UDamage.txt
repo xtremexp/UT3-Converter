@@ -1,0 +1,56 @@
+      Begin Actor Class=UTPickupFactory_UDamage Name=UTPickupFactory_UDamage_0 Archetype=UTPickupFactory_UDamage'UTGameContent.Default__UTPickupFactory_UDamage'
+         Begin Object Class=DynamicLightEnvironmentComponent Name=PickupLightEnvironment ObjName=DynamicLightEnvironmentComponent_2 Archetype=DynamicLightEnvironmentComponent'UTGameContent.Default__UTPickupFactory_UDamage:PickupLightEnvironment'
+            Name="DynamicLightEnvironmentComponent_2"
+            ObjectArchetype=DynamicLightEnvironmentComponent'UTGameContent.Default__UTPickupFactory_UDamage:PickupLightEnvironment'
+         End Object
+         Begin Object Class=StaticMeshComponent Name=StaticMeshComponent1 ObjName=StaticMeshComponent_4 Archetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_UDamage:StaticMeshComponent1'
+            LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_2'
+            LightingChannels=(bInitialized=True,Static=False,Dynamic=True)
+            Name="StaticMeshComponent_4"
+            ObjectArchetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_UDamage:StaticMeshComponent1'
+         End Object
+         Begin Object Class=UTParticleSystemComponent Name=DamageParticles ObjName=UTParticleSystemComponent_1 Archetype=UTParticleSystemComponent'UTGameContent.Default__UTPickupFactory_UDamage:DamageParticles'
+            bJustAttached=True
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="UTParticleSystemComponent_1"
+            ObjectArchetype=UTParticleSystemComponent'UTGameContent.Default__UTPickupFactory_UDamage:DamageParticles'
+         End Object
+         Begin Object Class=StaticMeshComponent Name=BaseMeshComp ObjName=StaticMeshComponent_5 Archetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_UDamage:BaseMeshComp'
+            LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_2'
+            LightingChannels=(bInitialized=True,Static=False,Dynamic=True)
+            Translation=(X=-0.000005,Y=-0.000005,Z=-44.000004)
+            Name="StaticMeshComponent_5"
+            ObjectArchetype=StaticMeshComponent'UTGameContent.Default__UTPickupFactory_UDamage:BaseMeshComp'
+         End Object
+         Begin Object Class=AudioComponent Name=DamageReady ObjName=AudioComponent_2 Archetype=AudioComponent'UTGameContent.Default__UTPickupFactory_UDamage:DamageReady'
+            Name="AudioComponent_2"
+            ObjectArchetype=AudioComponent'UTGameContent.Default__UTPickupFactory_UDamage:DamageReady'
+         End Object
+         Begin Object Class=CylinderComponent Name=CollisionCylinder ObjName=CylinderComponent_6 Archetype=CylinderComponent'UTGameContent.Default__UTPickupFactory_UDamage:CollisionCylinder'
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="CylinderComponent_6"
+            ObjectArchetype=CylinderComponent'UTGameContent.Default__UTPickupFactory_UDamage:CollisionCylinder'
+         End Object
+         Begin Object Class=PathRenderingComponent Name=PathRenderer ObjName=PathRenderingComponent_2 Archetype=PathRenderingComponent'UTGameContent.Default__UTPickupFactory_UDamage:PathRenderer'
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Name="PathRenderingComponent_2"
+            ObjectArchetype=PathRenderingComponent'UTGameContent.Default__UTPickupFactory_UDamage:PathRenderer'
+         End Object
+         Spinner=StaticMeshComponent'StaticMeshComponent_4'
+         ParticleEffects=UTParticleSystemComponent'UTParticleSystemComponent_1'
+         PickupReadySound=AudioComponent'AudioComponent_2'
+         LightEnvironment=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_2'
+         bPathsChanged=True
+         CylinderComponent=CylinderComponent'CylinderComponent_6'
+         Components(0)=CylinderComponent'CylinderComponent_6'
+         Components(1)=PathRenderingComponent'PathRenderingComponent_2'
+         Components(2)=DynamicLightEnvironmentComponent'DynamicLightEnvironmentComponent_2'
+         Components(3)=StaticMeshComponent'StaticMeshComponent_5'
+         Components(4)=StaticMeshComponent'StaticMeshComponent_4'
+         Components(5)=UTParticleSystemComponent'UTParticleSystemComponent_1'
+         Components(6)=AudioComponent'AudioComponent_2'
+	 $coredata
+         CollisionComponent=CylinderComponent'CylinderComponent_6'
+         Name="UTPickupFactory_UDamage_0"
+         ObjectArchetype=UTPickupFactory_UDamage'UTGameContent.Default__UTPickupFactory_UDamage'
+      End Actor
