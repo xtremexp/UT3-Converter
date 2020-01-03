@@ -169,7 +169,7 @@ public class About extends javax.swing.JDialog {
 
     private void jXHyperlink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jXHyperlink1ActionPerformed
         try {
-             open(new URI("http://utforums.epicgames.com/showthread.php?p=25131566"));
+             open(new URI("https://www.epicgames.com/unrealtournament/forums/past-unreal-tournament-games/unreal-tournament-3/407842"));
         } catch (Exception e) {
         }
     }//GEN-LAST:event_jXHyperlink1ActionPerformed
