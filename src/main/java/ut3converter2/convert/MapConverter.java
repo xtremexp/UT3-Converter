@@ -90,6 +90,11 @@ public class MapConverter extends GlobalConverter implements Runnable {
     //        U2
     public static final Object[] defumc_u2ut3=new Object[]{false,new String[]{"UT2k4ToUT3-Default.umc"},"UT2k4ToUT3-Default.umc"};
 
+    /**
+     * Folder where immages are for instructions
+     */
+    public final static String IMAGE_FOLDER = "/images";
+
     public static final String defscalefac_u2ut2k4_ut3="1X";
     public static final String defscalefac_u1ut99_ut2004="1.25X";
     public static final String defscalefac_u1ut99_ut3="1.25X";

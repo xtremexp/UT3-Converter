@@ -148,23 +148,23 @@ public class U1UT99ToUT3Conv extends MapConverter {
         Instructions inst1 = new Instructions("Step "+numstep+"-Textures");
         inst1.addInstruction(new Instruction(new JLabel("Open the Unreal Editor:"+Main.config.getUEDFilePath(this.output_utgame))));
         inst1.addInstruction(new Instruction(new JLabel("Create new map in subtractive mode:")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->New\"->Geometry Style=Subtractive","/ut3converter2/ihm/images/ut3/newmapsub.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("Open the Generic Browser","/ut3converter2/ihm/images/ut3/genericbrowser.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->Import\"","/ut3converter2/ihm/images/ut3/genericbrowser-import.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Select all .psd textures only from: "+this.getTexfolder(),"/ut3converter2/ihm/images/ut3/importtgatex.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set Package name=\""+this.getDefaultpackage()+"\" and leave Group field blank","/ut3converter2/ihm/images/ut3/importtexoptions.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->New\"->Geometry Style=Subtractive",IMAGE_FOLDER + "/ut3/newmapsub.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("Open the Generic Browser",IMAGE_FOLDER + "/ut3/genericbrowser.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->Import\"",IMAGE_FOLDER + "/ut3/genericbrowser-import.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Select all .psd textures only from: "+this.getTexfolder(),IMAGE_FOLDER + "/ut3/importtgatex.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set Package name=\""+this.getDefaultpackage()+"\" and leave Group field blank",IMAGE_FOLDER + "/ut3/importtexoptions.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Set \"Create material?\" to True")));
         inst1.addInstruction(new Instruction(new JLabel("     Press \"OK All\" and wait while textures are being imported (can take about 5 min)")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("Select in the generic browser the new package you have just created ","/ut3converter2/ihm/images/ut3/savetexpackage.png")));//
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->Save\"","/ut3converter2/ihm/images/ut3/savetexpackage.png")));//
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Save the .upk file wherever you want","/ut3converter2/ihm/images/ut3/savetexpackage2.png")));//
+        inst1.addInstruction(new Instruction(new myJXHyperlink("Select in the generic browser the new package you have just created ",IMAGE_FOLDER + "/ut3/savetexpackage.png")));//
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->Save\"",IMAGE_FOLDER + "/ut3/savetexpackage.png")));//
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Save the .upk file wherever you want",IMAGE_FOLDER + "/ut3/savetexpackage2.png")));//
         gi.addInstructions(inst1);
         numstep ++;
 
 
         inst1 = new Instructions("Step "+numstep+"-Alpha Textures");
-        inst1.addInstruction(new Instruction(new myJXHyperlink(" For textures with alpha layer (e.g.: trees,plants,..):","/ut3converter2/ihm/images/ut3/alphabadgood.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Go to its properties (double click)","/ut3converter2/ihm/images/ut3/setalphatex.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink(" For textures with alpha layer (e.g.: trees,plants,..):",IMAGE_FOLDER + "/ut3/alphabadgood.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Go to its properties (double click)",IMAGE_FOLDER + "/ut3/setalphatex.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Link alpha channel to Opacity")));
         inst1.addInstruction(new Instruction(new JLabel("     Set BlendMode = Blend_Translucent")));
         inst1.addInstruction(new Instruction(new JLabel("     Close window and save changes.")));
@@ -173,11 +173,11 @@ public class U1UT99ToUT3Conv extends MapConverter {
         
         inst1 = new Instructions("Step "+numstep+"-Sounds");
         inst1.addInstruction(new Instruction(new JLabel(" Import sounds:")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Open the Generic Browser","/ut3converter2/ihm/images/ut3/genericbrowser.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->Import\"","/ut3converter2/ihm/images/ut3/genericbrowser-import.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Select all .wav sounds from: "+this.getSndfolder(),"/ut3converter2/ihm/images/ut3/importsnds.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set package name the same as the one you set with textures","/ut3converter2/ihm/images/ut3/importsndsoptions.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set \"bAutoCreateCue\" to True","/ut3converter2/ihm/images/ut3/importsndsoptions.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Open the Generic Browser",IMAGE_FOLDER + "/ut3/genericbrowser.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->Import\"",IMAGE_FOLDER + "/ut3/genericbrowser-import.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Select all .wav sounds from: "+this.getSndfolder(),IMAGE_FOLDER + "/ut3/importsnds.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set package name the same as the one you set with textures",IMAGE_FOLDER + "/ut3/importsndsoptions.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set \"bAutoCreateCue\" to True",IMAGE_FOLDER + "/ut3/importsndsoptions.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Press \"OK All\"")));
         inst1.addInstruction(new Instruction(new JLabel("     Save your package")));
         gi.addInstructions(inst1);
@@ -185,30 +185,30 @@ public class U1UT99ToUT3Conv extends MapConverter {
 
         inst1 = new Instructions("Step "+numstep+"-T3D Level Import");
         inst1.addInstruction(new Instruction(new JLabel("In main window:")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     do \"File\"->\"Import\"->\"Into existing map","/ut3converter2/ihm/images/ut3/importt3d.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Select the T3D file: "+super.getFinalt3dfile().getAbsolutePath(),"/ut3converter2/ihm/images/ut3/importt3d2.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     do \"File\"->\"Import\"->\"Into existing map",IMAGE_FOLDER + "/ut3/importt3d.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Select the T3D file: "+super.getFinalt3dfile().getAbsolutePath(),IMAGE_FOLDER + "/ut3/importt3d2.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Wait while the editor is importing level data ...")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     do \"Build\"->\"Geometry for Current Level\"","/ut3converter2/ihm/images/ut3/buildgeom.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     do \"Tools\"->\"Clean BSP Materials\"","/ut3converter2/ihm/images/ut3/cleanbspmaterials.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Right click on a surface of the imported level and select all surfaces","/ut3converter2/ihm/images/ut3/selectallsurfaces.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     If you see all level in black use unlit mode","/ut3converter2/ihm/images/ut3/unlitmode.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Check \"Accepts Lights\" only","/ut3converter2/ihm/images/ut3/setsurfacelightning.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     do \"Build\"->\"Geometry for Current Level\"",IMAGE_FOLDER + "/ut3/buildgeom.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     do \"Tools\"->\"Clean BSP Materials\"",IMAGE_FOLDER + "/ut3/cleanbspmaterials.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Right click on a surface of the imported level and select all surfaces",IMAGE_FOLDER + "/ut3/selectallsurfaces.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     If you see all level in black use unlit mode",IMAGE_FOLDER + "/ut3/unlitmode.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Check \"Accepts Lights\" only",IMAGE_FOLDER + "/ut3/setsurfacelightning.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Rebuild geometry and you can now see lightened level!")));
         //
         gi.addInstructions(inst1);
         numstep ++;
 
         inst1 = new Instructions("Step "+numstep+" - Movers");
-        inst1.addInstruction(new Instruction(new myJXHyperlink("For EACH volume actors in map DO:","/ut3converter2/ihm/images/ut3/ut3-moverconv1.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("For EACH volume actors in map DO:",IMAGE_FOLDER + "/ut3/ut3-moverconv1.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Right-click on it")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do: \"Convert to StaticMesh\"","/ut3converter2/ihm/images/ut3/ut3-moverconv2.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set Package=\""+this.getDefaultpackage()+"\",set Group (can be empty) and Name as you want","/ut3converter2/ihm/images/ut3/ut3-moverconv3.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do: \"Convert to StaticMesh\"",IMAGE_FOLDER + "/ut3/ut3-moverconv2.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set Package=\""+this.getDefaultpackage()+"\",set Group (can be empty) and Name as you want",IMAGE_FOLDER + "/ut3/ut3-moverconv3.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Press \"OK\"")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Right-click on the nearest mover actor (red StaticMesh) near the volume actor","/ut3converter2/ihm/images/ut3/ut3-moverconv4.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Go to StaticMeshComponent","/ut3converter2/ihm/images/ut3/ut3-moverconv5.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Open the generic browser and browse for your StaticMesh created","/ut3converter2/ihm/images/ut3/genericbrowser.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set the new mesh for the mover","/ut3converter2/ihm/images/ut3/ut3-moverconv6.png"))); //ut2k4-mymeshinbr
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     The mover has now the correct staticmesh in the map!","/ut3converter2/ihm/images/ut3/ut3-moverconv7.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Right-click on the nearest mover actor (red StaticMesh) near the volume actor",IMAGE_FOLDER + "/ut3/ut3-moverconv4.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Go to StaticMeshComponent",IMAGE_FOLDER + "/ut3/ut3-moverconv5.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Open the generic browser and browse for your StaticMesh created",IMAGE_FOLDER + "/ut3/genericbrowser.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set the new mesh for the mover",IMAGE_FOLDER + "/ut3/ut3-moverconv6.png"))); //ut2k4-mymeshinbr
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     The mover has now the correct staticmesh in the map!",IMAGE_FOLDER + "/ut3/ut3-moverconv7.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Delete the volume actor")));
         gi.addInstructions(inst1);
 

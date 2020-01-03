@@ -15,7 +15,7 @@ public class Instruction {
 
     String message;
     /**
-     * jXLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ut3converter2/ihm/images/importtexUT.png")));
+     * jXLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(IMAGE_FOLDER + "/importtexUT.png")));
      * /ut3converter2/ihm/images/importtexUT.png
      */
     String image;

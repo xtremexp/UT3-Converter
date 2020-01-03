@@ -125,18 +125,18 @@ public class U1UT99ToUT2k4Conv extends MapConverter{
         int numstep=1;
         Instructions inst1 = new Instructions("Step "+numstep+"-Textures");
         inst1.addInstruction(new Instruction(new JLabel("Open the UnrealEditor:"+Main.config.getUEDFilePath(output_utgame))));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("Open the Textures Browser","/ut3converter2/ihm/images/ut2004/uedut2k4-texbr.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->Import\"","/ut3converter2/ihm/images/ut2004/ut2k4uedteximpot.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Select all .bmp textures only from: "+this.getTexfolder(),"/ut3converter2/ihm/images/ut2004/ut2k4uedteximpot2.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set Package=\"myLevel\" and leave Group field blank","/ut3converter2/ihm/images/importtexUT.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("Open the Textures Browser",IMAGE_FOLDER + "/ut2004/uedut2k4-texbr.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Do \"File->Import\"",IMAGE_FOLDER + "/ut2004/ut2k4uedteximpot.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Select all .bmp textures only from: "+this.getTexfolder(),IMAGE_FOLDER + "/ut2004/ut2k4uedteximpot2.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set Package=\"myLevel\" and leave Group field blank",IMAGE_FOLDER + "/importtexUT.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Press \"OK All\"")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("For masked textures:","/ut3converter2/ihm/images/ut2004/ut2k4-translucy.png")));//
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Import the .bmp files into myLevel package from: "+this.getTexfolder(),"/ut3converter2/ihm/images/ut2004/ut2k4-importbmp.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("For masked textures:",IMAGE_FOLDER + "/ut2004/ut2k4-translucy.png")));//
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Import the .bmp files into myLevel package from: "+this.getTexfolder(),IMAGE_FOLDER + "/ut2004/ut2k4-importbmp.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Select the imported bmp texture in texture browser")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Open up its properties","/ut3converter2/ihm/images/ut2004/ut2k4-texprop1.png")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set bMasked=True and bTwoSided=True (if texture is two sided)","/ut3converter2/ihm/images/ut2004/ut2k4-texprop2.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Open up its properties",IMAGE_FOLDER + "/ut2004/ut2k4-texprop1.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Set bMasked=True and bTwoSided=True (if texture is two sided)",IMAGE_FOLDER + "/ut2004/ut2k4-texprop2.png")));
         inst1.addInstruction(new Instruction(new JLabel("     Close windows and go reselect texture in browser")));
-        inst1.addInstruction(new Instruction(new myJXHyperlink("     Compress texture to DXT3 (will reduce map filesize)","/ut3converter2/ihm/images/ut2004/ut2k4-compressdxt3.png")));
+        inst1.addInstruction(new Instruction(new myJXHyperlink("     Compress texture to DXT3 (will reduce map filesize)",IMAGE_FOLDER + "/ut2004/ut2k4-compressdxt3.png")));
 
         numstep ++;
 
@@ -145,32 +145,32 @@ public class U1UT99ToUT2k4Conv extends MapConverter{
         Instructions inst2 = new Instructions("Step "+numstep+"-Sounds");
         inst2.addInstruction(new Instruction(new JLabel("     Select the Sounds tab")));
         inst2.addInstruction(new Instruction(new JLabel("     Do \"File->Import\"")));
-        inst2.addInstruction(new Instruction(new myJXHyperlink("     Select all .wav sounds from: "+this.getSndfolder(),"/ut3converter2/ihm/images/ut2004/ut2k4uedimportsnds.png")));
-        inst2.addInstruction(new Instruction(new myJXHyperlink("     Set Package=\"myLevel\" and leave Group field blank","/ut3converter2/ihm/images/ut2004/ut2k4uedimportsnds2.png")));
+        inst2.addInstruction(new Instruction(new myJXHyperlink("     Select all .wav sounds from: "+this.getSndfolder(),IMAGE_FOLDER + "/ut2004/ut2k4uedimportsnds.png")));
+        inst2.addInstruction(new Instruction(new myJXHyperlink("     Set Package=\"myLevel\" and leave Group field blank",IMAGE_FOLDER + "/ut2004/ut2k4uedimportsnds2.png")));
         inst2.addInstruction(new Instruction(new JLabel("     Press \"OK All\"")));
         numstep ++;
         
         Instructions inst3 = new Instructions("Step "+numstep+"-T3D Level Import");
         inst3.addInstruction(new Instruction(new JLabel("In main window:")));
-        inst3.addInstruction(new Instruction(new myJXHyperlink("     do \"File\"->\"Import...\"","/ut3converter2/ihm/images/ut2004/ut2k4uedimportT3d1.png")));
-        inst3.addInstruction(new Instruction(new myJXHyperlink("     Select the T3D file: "+super.getFinalt3dfile().getAbsolutePath(),"/ut3converter2/ihm/images/ut2004/ut2k4uedimportT3d2.png")));
-        inst3.addInstruction(new Instruction(new myJXHyperlink("     Don't import into existing map","/ut3converter2/ihm/images/ut2004/ut2k4uedimportT3d3.png")));
+        inst3.addInstruction(new Instruction(new myJXHyperlink("     do \"File\"->\"Import...\"",IMAGE_FOLDER + "/ut2004/ut2k4uedimportT3d1.png")));
+        inst3.addInstruction(new Instruction(new myJXHyperlink("     Select the T3D file: "+super.getFinalt3dfile().getAbsolutePath(),IMAGE_FOLDER + "/ut2004/ut2k4uedimportT3d2.png")));
+        inst3.addInstruction(new Instruction(new myJXHyperlink("     Don't import into existing map",IMAGE_FOLDER + "/ut2004/ut2k4uedimportT3d3.png")));
         inst3.addInstruction(new Instruction(new JLabel("     Wait while the editor is importing actors ..")));
-        inst3.addInstruction(new Instruction(new myJXHyperlink("     do \"Build\"->\"Rebuild Geometry\"","/ut3converter2/ihm/images/ut2004/ut2k4uedbuildgeom.png")));
+        inst3.addInstruction(new Instruction(new myJXHyperlink("     do \"Build\"->\"Rebuild Geometry\"",IMAGE_FOLDER + "/ut2004/ut2k4uedbuildgeom.png")));
         numstep ++;
         
         Instructions inst4 = new Instructions("Step "+numstep+" - Movers");
-        inst4.addInstruction(new Instruction(new myJXHyperlink("For EACH volume actors in map DO:","/ut3converter2/ihm/images/ut2004/ut2k4-moverconv1.png")));
+        inst4.addInstruction(new Instruction(new myJXHyperlink("For EACH volume actors in map DO:",IMAGE_FOLDER + "/ut2004/ut2k4-moverconv1.png")));
         inst4.addInstruction(new Instruction(new JLabel("     Right-click on it")));
-        inst4.addInstruction(new Instruction(new myJXHyperlink("     Do: \"Convert\"->\"To StaticMesh\"","/ut3converter2/ihm/images/ut2004/ut2k4-moverconv2.png")));
-        inst4.addInstruction(new Instruction(new myJXHyperlink("     Set Package=\"myLevel\",set Group (can be blank) and Name as you want","/ut3converter2/ihm/images/ut2004/ut2k4-moverconv3.png")));
+        inst4.addInstruction(new Instruction(new myJXHyperlink("     Do: \"Convert\"->\"To StaticMesh\"",IMAGE_FOLDER + "/ut2004/ut2k4-moverconv2.png")));
+        inst4.addInstruction(new Instruction(new myJXHyperlink("     Set Package=\"myLevel\",set Group (can be blank) and Name as you want",IMAGE_FOLDER + "/ut2004/ut2k4-moverconv3.png")));
         inst4.addInstruction(new Instruction(new JLabel("     Press \"OK\"")));
-        inst4.addInstruction(new Instruction(new myJXHyperlink("     Select the nearest Mover actor (StaticMesh) near the volume actor","/ut3converter2/ihm/images/ut2004/ut2k4-selectedmesh.png")));
-        inst4.addInstruction(new Instruction(new myJXHyperlink("     Open its properties (press F4)","/ut3converter2/ihm/images/ut2004/ut2k4-moverprops.png")));
-        inst4.addInstruction(new Instruction(new myJXHyperlink("     Open the StaticMeshes browser","/ut3converter2/ihm/images/ut2004/ut2k4-smbrowser.png")));
-        inst4.addInstruction(new Instruction(new myJXHyperlink("     Go to \"myLevel\" package and select the staticmesh you have just created","/ut3converter2/ihm/images/ut2004/ut2k4-mymeshinbr.png"))); //ut2k4-mymeshinbr
-        inst4.addInstruction(new Instruction(new myJXHyperlink("     Go back to the Mover Properties window and click on field \"Display\"->\"StaticMesh\"","/ut3converter2/ihm/images/ut2004/ut2k4-replacesm.png")));
-        inst4.addInstruction(new Instruction(new myJXHyperlink("     Press \"Use\", the mover has now the correct staticmesh in the map!","/ut3converter2/ihm/images/ut2004/ut2k4-wootmymover.png")));
+        inst4.addInstruction(new Instruction(new myJXHyperlink("     Select the nearest Mover actor (StaticMesh) near the volume actor",IMAGE_FOLDER + "/ut2004/ut2k4-selectedmesh.png")));
+        inst4.addInstruction(new Instruction(new myJXHyperlink("     Open its properties (press F4)",IMAGE_FOLDER + "/ut2004/ut2k4-moverprops.png")));
+        inst4.addInstruction(new Instruction(new myJXHyperlink("     Open the StaticMeshes browser",IMAGE_FOLDER + "/ut2004/ut2k4-smbrowser.png")));
+        inst4.addInstruction(new Instruction(new myJXHyperlink("     Go to \"myLevel\" package and select the staticmesh you have just created",IMAGE_FOLDER + "/ut2004/ut2k4-mymeshinbr.png"))); //ut2k4-mymeshinbr
+        inst4.addInstruction(new Instruction(new myJXHyperlink("     Go back to the Mover Properties window and click on field \"Display\"->\"StaticMesh\"",IMAGE_FOLDER + "/ut2004/ut2k4-replacesm.png")));
+        inst4.addInstruction(new Instruction(new myJXHyperlink("     Press \"Use\", the mover has now the correct staticmesh in the map!",IMAGE_FOLDER + "/ut2004/ut2k4-wootmymover.png")));
         inst4.addInstruction(new Instruction(new JLabel("     Delete the volume actor")));
 
         //ut2k4-smbrowser
