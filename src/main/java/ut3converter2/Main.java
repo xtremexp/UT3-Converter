@@ -29,7 +29,7 @@ import ut3converter2.tools.T3DBrushTranformPerm;
  */
 public class Main {
 
-    public static String numversion="0.26 - 20200103";
+    public static String numversion="0.26 - 20200103 - Final";
     public static String maintitle="UT3 Converter II - "+Main.numversion;
     public static Configuration config;
     public static File installfolder;
