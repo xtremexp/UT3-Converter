@@ -1,3 +1,6 @@
+V0.26 - 03/01/2020:
+Updated from java 6 to java 8
+
 V0.25a - 23/09/2010
 [UT2004/U2->UT3]-Skips terrain conversion if invalid terrain heightmap data texture
 (so at least will get al other stuff converted)

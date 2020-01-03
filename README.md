@@ -1,10 +1,10 @@
 
 # UT3 Converter2 Readme file
-Version: 0.23d
-Author: XtremeXp
-Release Date: 03/05/2010
-Web page: http://utforums.epicgames.com/showthread.php?t=588848
-Forum : http://utforums.epicgames.com/showthread.php?t=588848
+Version: 0.26
+* Author: XtremeXp
+* Release Date: 03/01/2020
+* Web page: http://utforums.epicgames.com/showthread.php?t=588848
+* Forum : http://utforums.epicgames.com/showthread.php?t=588848
 
 ---
 

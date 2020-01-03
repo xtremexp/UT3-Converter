@@ -1,10 +1,10 @@
 
 # UT3 Converter2 Readme file
-Version: 0.23d
-Author: XtremeXp
-Release Date: 03/05/2010
-Web page: http://utforums.epicgames.com/showthread.php?t=588848
-Forum : http://utforums.epicgames.com/showthread.php?t=588848
+Version: 0.26
+* Author: XtremeXp
+* Release Date: 03/01/2020
+* Web page: http://utforums.epicgames.com/showthread.php?t=588848
+* Forum : http://utforums.epicgames.com/showthread.php?t=588848
 
 ---
 
@@ -28,9 +28,9 @@ UT3 Converter 2 supports theses conversions:
 # Requirements
 You need:
 * Two of the following UT games:
-∞ Unreal Tournament
-∞ Unreal Tournament 2004
-∞ Unreal Tournament 3
+¬∞ Unreal Tournament
+¬∞ Unreal Tournament 2004
+¬∞ Unreal Tournament 3
 * Java technology installed (see www.java.com)
 * Some skills with UnrealEd software
 
@@ -40,7 +40,7 @@ You need:
 * Decompress the ZIP archive to any folder of your choice.
 * Double-click on UT3Converter2.jar.
 * If not working install java (www.java) or create some "run.bat" file with notepad that you will save in the root program folder with this in it
-> java -jar ut3converter2.jar 
+> java -jar ut3converter2.jar
 * this will force launching this file associating it as java program
 
 ---
@@ -53,7 +53,7 @@ You need:
 * Pickups
 * Most of main actors
 
---- 
+---
 
 # What this program DOES NOTconverts
 * Custom scripts
@@ -62,7 +62,7 @@ You need:
 
 # Limitation/Issues/Known bugs
 * All-Do not work with folders with spaces (e.g.: "C:\Program Files\UnrealTournament")
-* UT and DeusEx Games -Will not convert custom textures in external packages (not in myLevel/e.g: ../Textures/myPackage.utx) for 
+* UT and DeusEx Games -Will not convert custom textures in external packages (not in myLevel/e.g: ../Textures/myPackage.utx) for
 * UT2004->UT3 - Some staticmeshes can't be converted. ("ucc batchexport mypackage.usx StaticMesh t3d" cmd bug)
 * Can't convert maps using UTF16-LE or UTF16-BE t3d file encoding. Check that mapname doesn't have exotic chars such as {%^,.. but only alphanumeric values (a->z,0->9) then save your map.
 
@@ -82,7 +82,7 @@ Tools:
         * Nvconvert - Pierre-E Gougelet - dds to psd conversion http://www.xnview.com/
         * UED Texture Toolkit - Alex Stewart - Terrain HeightMap 16-bit greyscale texture conversion (.bmp->.tiff) - http://www.foogod.com/UEdTexKit/
         * Sox - Chris Bagwell -Wav conversion - http://sox.sourceforge.net
-        * UT Packages Delphi unit - Antonio Cordero Balc·zar - http://www.acordero.org
+        * UT Packages Delphi unit - Antonio Cordero Balc√°zar - http://www.acordero.org
 
 
 Librairies:
