@@ -1,3 +1,6 @@
 /.idea/
 UT3-Converter.iml
 /target/
+config.xml
+log.*
+/ConvertedMaps/

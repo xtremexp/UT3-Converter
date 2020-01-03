@@ -1096,7 +1096,7 @@ public class MapConverter extends GlobalConverter implements Runnable {
         File f = new File(Installation.getProgramFolder().getAbsolutePath()+File.separator+"ConvertedMaps");
         if(!f.exists())
         {
-            f.mkdir();
+            f.mkdirs();
         }
         return new File(tmp);
     }
