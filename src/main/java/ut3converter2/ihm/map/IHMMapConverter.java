@@ -131,7 +131,7 @@ public class IHMMapConverter extends javax.swing.JDialog {
         jbtnclose = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("ut3converter2/ihm/map/Bundle"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("Bundle"); // NOI18N
         setTitle(bundle.getString("IHMMapConverter.title")); // NOI18N
 
         jXPanel1.setLayout(new java.awt.BorderLayout());
