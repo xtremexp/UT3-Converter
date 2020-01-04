@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.xtx</groupId>
-	<artifactId>UT3 Converter</artifactId>
+	<artifactId>UT3-Converter</artifactId>
 	<version>0.26</version>
 	<packaging>jar</packaging>
 
