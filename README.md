@@ -1,16 +1,16 @@
 
 # UT3 Converter2 Readme file
+
+<b>UT3 Converter is now longer being developped and maintained.
+Use [UT4X converter](https://github.com/xtremexp/UT4X-Converter) instead</b>
+
 Version: 0.26 - Final
 * Author: XtremeXp
 * Release Date: 03/01/2020
-* Status: Discontinued
+* Status: <b>Discontinued</b>
 * Web page: https://www.epicgames.com/unrealtournament/forums/past-unreal-tournament-games/unreal-tournament-3/407842
 * Forum : https://www.epicgames.com/unrealtournament/forums/past-unreal-tournament-games/unreal-tournament-3/407842
 
-Status:<br>
-Project is no longer being developed. (unless there are some blocking issues)<br>
-Users may switch to latest Unreal Tournament (UT4) and use the newer tool "UT4X Converter" which you can find here:<br>
-https://www.epicgames.com/unrealtournament/forums/unreal-tournament-development/ut-development-level-design/9285 
 
 ---
 
